@@ -1,0 +1,39 @@
+<%= form_with(model: fighter) do |form| %>
+  <% if fighter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fighter.errors.count, "error") %> prohibited this fighter from being saved:</h2>
+
+      <ul>
+        <% fighter.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+<div class="field form-group">
+  <div class="field" >
+    <%= form.text_field :first_name, class: "form-control", placeholder: "First Name" %>
+  </div>
+
+<br>
+  <div class="field" >
+    <%= form.text_field :last_name, class: "form-control", placeholder: "Last Name" %>
+  </div>
+
+<br>
+  <div class="field" >
+    <%= form.text_field :weight_class, class: "form-control", placeholder: "Weight Class" %>
+  </div>
+<br>
+  <div class="field" >
+    <%= form.number_field :user_id, id: :fighter_user_id, class: "form-control", value: current_user.id, type: :hidden %>
+  </div>
+<br>
+  <div class="action">
+    <%= form.submit class: "btn btn-outline-success" %>
+  </div>
+</div>
+<% end %>

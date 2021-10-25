@@ -1,0 +1,19 @@
+
+
+<div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold"><%= @fighter.first_name + " " + @fighter.last_name %></h1>
+        <p class="col-md-8 fs-4"> <strong>Weight Class:</strong> <%= @fighter.weight_class %></p>
+      </div>
+    </div>
+
+<p>
+
+</p>
+
+<div class="btn-group" role="group" aria-label="Basic outlined example">
+  <%= link_to "Edit this fighter", edit_fighter_path(@fighter), class: "btn btn-outline-primary" %>
+  <%= link_to "Back to fighters", fighters_path, class: "btn btn-outline-primary" %>
+
+  <%= button_to "Destroy this fighter", fighter_path(@fighter), method: :delete, class: "btn btn-outline-danger" %>
+</div>

@@ -1,0 +1,16 @@
+<div id="<%= dom_id fighter %>" class="scaffold_record" "list-group">
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-2">Full Name:</h5>
+      <%= fighter.first_name + " " + fighter.last_name %>
+    </div>
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-2">Weight Division:</h5>
+      <%= fighter.weight_class %>
+    </div>
+  </a>
+</div>
+<br>
+<p>
+  <%= link_to "Show this fighter", fighter, class: 'btn btn-dark' %>
+</p>
