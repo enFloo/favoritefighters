@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+Ruby version: 3.0.2
+Rails version: Alpha7.0.0
