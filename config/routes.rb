@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create]
   resources :fighters
   resources :sessions
-  get 'home/about'
   root 'home#index'
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
