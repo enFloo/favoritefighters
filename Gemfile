@@ -10,8 +10,11 @@ gem "turbo-rails", ">= 0.7.11"
 gem "stimulus-rails", ">= 0.4.0"
 gem "jbuilder", "~> 2.7"
 gem 'bcrypt', '~> 3.1', '>= 3.1.5'
-
-
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'rails-ujs', '~> 0.1.0'
+gem 'turbolinks'
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 

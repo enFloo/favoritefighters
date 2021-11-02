@@ -1,0 +1,79 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+ .background-image {
+  background-image: url("izzy2.jpeg");
+  height: 500px;
+  width: 100;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .nav1{
+   margin-bottom: 0px;
+   border-radius: 0px;
+ }
+
+ .notice1{
+   margin-top: 90px;
+ }
+
+ h1.center{
+   text-align: center;
+   margin: 25px 0px 20px 0px;
+ }
+
+ .border1 {
+   border: 1px solid #888888;
+   padding: 10px 10px 15px 20px;
+   margin: 0px;
+ }
+
+ .border2 {
+   border: 1px solid #888888;
+   padding: 10px 15px 15px 20px;
+   margin: 0px;
+ }
+
+ form {
+   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+ }
+
+ div.form
+{
+    display: block;
+    text-align: center;
+}
+
+h1.landing-title{
+  color: white;
+  font-family: Times New Roman, Times, serif;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 12%;
+  left: 5%;
+}
+
+.marginbottom{
+  margin-bottom: 35px;
+}
+
+p.lineheight{
+  line-height: 23px;
+}
+
+//footer margin
+.margintop{
+  margin-top: 100px;
+}
+
+//content margin
+.containermargintop{
+  margin-top: 30px;
+}

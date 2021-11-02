@@ -1,6 +1,6 @@
 class FightersController < ApplicationController
   before_action :set_fighter, only: %i[ show edit update destroy ]
-  before_action
+  before_action :authorize
   # GET /fighters or /fighters.json
   def index
     @fighters = Fighter.all
@@ -66,4 +66,6 @@ class FightersController < ApplicationController
     def fighter_params
       params.require(:fighter).permit(:first_name, :last_name, :weight_class, :user_id)
     end
+
+    
 end
